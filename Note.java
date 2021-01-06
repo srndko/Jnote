@@ -33,7 +33,7 @@ public class Note implements ActionListener {
 		JMenuItem miNew = new JMenuItem("New");
 		JMenuItem miOpen = new JMenuItem("Open...");
 		JMenuItem miSave = new JMenuItem("Save");
-		JMenuItem miSaveAs = new JMenuItem("Save as...");
+		JMenuItem miSaveAs = new JMenuItem("Save As...");
 		JMenuItem miPrint = new JMenuItem("Print...");
 		JMenuItem miExit = new JMenuItem("Exit");
 
@@ -119,9 +119,14 @@ public class Note implements ActionListener {
 		} else if (command.equals("Open...")) {
 			openFile();
 		} else if (command.equals("Save")) {
-			saveFile();
+			if (!textpane.getText().isEmpty()) {
+				saveFile();
+			} else {
+				saveAsFile();
+			}
 		} else if (command.equals("Save As...")) {
-
+			System.out.println("Save as... working...");
+			saveAsFile();
 		} else if (command.equals("Cut")) {
 			System.out.println("Cut() activate!");
 			System.out.println("Clipboard : " + textpane.getText());
@@ -176,6 +181,10 @@ public class Note implements ActionListener {
 	}
 
 	private void saveFile() {
+			
+	}
+
+	private void saveAsFile() {
 		JFileChooser chooser = new JFileChooser("c:");
 		int opened = chooser.showOpenDialog(null);
 		if (opened == chooser.APPROVE_OPTION) {
@@ -201,7 +210,6 @@ public class Note implements ActionListener {
 			System.out.println(ex.getMessage());
 			ex.printStackTrace();
 		}
-
 	}
 
 	public static void main(String[] args) {
