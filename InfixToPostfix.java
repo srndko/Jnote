@@ -1,10 +1,26 @@
 import java.util.*;
 import javax.swing.*;
+import java.awt.*;
 
 public class InfixToPostfix {
+	JFrame frame;
 
-	public static void main(String[] args) {
-		run();
+	InfixToPostfix() {
+		initComponent();
+	}
+
+	private void initComponent() {
+		frame = new JFrame("ToPostfix");
+		
+		JLabel input_label = new JLabel();
+		JTextField input_box = new JTextField();
+
+
+		frame.add(input_box);
+		frame.add(input_box);
+		frame.setSize(500, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
 	}
 
 	public static void run() {
@@ -51,5 +67,9 @@ public class InfixToPostfix {
 		} else {
 			return -1;
 		}
+	}
+
+	public static void main(String[] args) {
+		new InfixToPostfix();
 	}
 }

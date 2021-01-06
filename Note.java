@@ -13,6 +13,10 @@ public class Note implements ActionListener {
 	private JScrollPane scrollpane;
 
 	Note() {
+		initComponent();
+	}
+
+	private void initComponent() {
 		// Main Frame
 		JFrame frame = new JFrame("Test Frame");
 
@@ -97,6 +101,7 @@ public class Note implements ActionListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
+
 	}
 
 	public void actionPerformed(ActionEvent e) {

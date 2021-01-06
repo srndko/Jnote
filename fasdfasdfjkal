@@ -1,0 +1,24 @@
+[33mcommit 0e2db1df52e3295ce6b7fc9ac8b1794864feb518[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: srndko <pretyboyiz@gmail.com>
+Date:   Wed Jan 6 07:33:39 2021 +0700
+
+    update note.java and testeverything.java and add new file for test is infixtopostix.java
+
+[33mcommit bca70944f79dbd15413757e3aeb4ae32274eef2c[m
+Merge: 4095d5b 4a82450
+Author: srndko <pretyboyiz@gmail.com>
+Date:   Wed Jan 6 06:57:31 2021 +0700
+
+    Merge branch 'main' of https://github.com/srndko/Jnote into main
+
+[33mcommit 4095d5b090ae7fee04d8d6d7997adf44b26d6e78[m
+Author: srndko <pretyboyiz@gmail.com>
+Date:   Wed Jan 6 06:52:41 2021 +0700
+
+    first commit
+
+[33mcommit 4a82450949c8e303c0c9e469d9156e2cb86aeb69[m
+Author: sD <30312950+srndko@users.noreply.github.com>
+Date:   Wed Jan 6 05:57:15 2021 +0700
+
+    Initial commit
